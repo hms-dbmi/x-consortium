@@ -5,5 +5,5 @@
 layout: home
 ---
 
-This is the homepage for the x-consortium.  It's members are Euclid, Euler,
-and Harry Truman.  It serves many purposes.
+This is the homepage for the x-consortium.  It's members include
+Nils Gehlenborg.
