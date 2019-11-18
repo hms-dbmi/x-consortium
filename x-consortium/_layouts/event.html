@@ -1,5 +1,9 @@
 ---
 layout: default
+dial_in_information:
+  - "+19292056099,,797609437# US (New York)"
+  - "+16699006833,,797609437# US (San Jose)"
+dial_in_link: https://zoom.us/j/797609437
 ---
 <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
@@ -10,9 +14,11 @@ layout: default
         {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
         {{ page.date | date: date_format }}
       </time>•
-      {%- for dial_in_information in page.dial_in_information -%}
-        <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name"> {{ dial_in_information }} •</span></span>
-      {%- endfor -%}</p>
+      {%- for information in layout.dial_in_information -%}
+        <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name"> {{ information }} •</span></span>
+      {%- endfor -%}
+        <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name"> <a href="{{ layout.dial_in_link }}">Dial In</a></span></span>
+      </p>
   </header>
 
   <div class="post-content e-content" itemprop="articleBody">
