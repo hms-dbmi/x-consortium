@@ -24,4 +24,4 @@ call_notes:
   - HCA strategy for ontology validation in metadata
   - Other efforts?
 - Discussion
-- Mailing list: https://lists.hubmapconsortium.org/g/xconsortiumdatacuration
+- [Mailing list](https://lists.hubmapconsortium.org/g/xconsortiumdatacuration)
