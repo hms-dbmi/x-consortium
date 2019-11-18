@@ -29,7 +29,6 @@ github_username:  x-consortium
 future: true
 # Build settings
 theme: minima
-baseurl: hms-dbmi.github.io/x-consortium
 plugins:
   - jekyll-feed
 collections:
