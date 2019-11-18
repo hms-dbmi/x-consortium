@@ -22,7 +22,6 @@ title: x-consortium
 email: nils@x-consortium.com
 description: >- # this means to ignore newlines until "baseurl:"
   This is the website for x-consortium.
-baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: x-consortium
 github_username:  x-consortium
