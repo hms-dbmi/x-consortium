@@ -32,12 +32,9 @@ theme: minima
 plugins:
   - jekyll-feed
 collections:
-  upcoming_events:
+  events:
     output: true
-    permalink: /upcoming_events/:path
-  past_events:
-    output: true
-    permalink: /past_events/:path
+    permalink: /events/:path
 
 # Exclude from processing.
 # The following items will not be processed, by default.

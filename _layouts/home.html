@@ -9,10 +9,10 @@ layout: default
   <h1>About</h1>
   {{ content }}
 
-  {%- if site.upcoming_events.size > 0 -%}
+  {%- if site.events.size > 0 -%}
     <h2 class="post-list-heading">{{ page.list_title | default: "Next Event" }}</h2>
     <ul class="post-list">
-      {% assign sorted = (site.upcoming_events .. sort: 'date') %}
+      {% assign sorted = (site.events | where_exp: "item", "item.date >= site.time" | sorted:"date") %}
       {%- assign event = sorted.first -%}
       <li>
         {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}

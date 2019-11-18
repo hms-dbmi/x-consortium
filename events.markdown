@@ -3,18 +3,21 @@ layout: page
 title: Events
 permalink: /events/
 ---
-### Past Events
+### Upcoming Events
 <br/>
-{%- for event in site.past_events -%}
-  [**{{event.title}}**]({{event.url}})
+{%- assign sorted = (site.events | where_exp: "item", "item.date >= site.time" -%}
+{%- for event in sorted -%}
+   [**{{event.title}}**]({{event.url}})
   {{event.content}}
 {%- endfor -%}
+
 <br/>
 <hr/>
 <br/>
-### Upcoming Events
+### Past Events
 <br/>
-{%- for event in site.upcoming_events -%}
-   [**{{event.title}}**]({{event.url}})
+{%- assign sorted = (site.events | where_exp: "item", "item.date < site.time" -%}
+{%- for event in sorted -%}
+  [**{{event.title}}**]({{event.url}})
   {{event.content}}
 {%- endfor -%}
