@@ -29,7 +29,6 @@ github_username:  x-consortium
 future: true
 # Build settings
 theme: minima
-markdown: kramdown
 plugins:
   - jekyll-feed
 collections:
