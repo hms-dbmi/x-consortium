@@ -26,19 +26,19 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: x-consortium
 github_username:  x-consortium
-
+future: true
 # Build settings
 theme: minima
 markdown: kramdown
 plugins:
   - jekyll-feed
 collections:
-  past_events:
-    output: twitter_username
-    permalink: /past_events/:path
   upcoming_events:
-    output: twitter_username
+    output: true
     permalink: /upcoming_events/:path
+  past_events:
+    output: true
+    permalink: /past_events/:path
 
 # Exclude from processing.
 # The following items will not be processed, by default.

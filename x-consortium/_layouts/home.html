@@ -12,7 +12,7 @@ layout: default
   {%- if site.upcoming_events.size > 0 -%}
     <h2 class="post-list-heading">{{ page.list_title | default: "Next Event" }}</h2>
     <ul class="post-list">
-      {% assign sorted = (site.upcoming_events | sort: 'date') %}
+      {% assign sorted = (site.upcoming_events .. sort: 'date') %}
       {%- assign event = sorted.first -%}
       <li>
         {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}

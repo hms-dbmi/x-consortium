@@ -1,6 +1,6 @@
 ---
 layout: event
-title:  "2019-11-17 Call"
+title:  "2019-12-17 Call"
 date:   2019-12-17 10:06:46 -0500
 time:
 file_list:
@@ -11,10 +11,6 @@ recording:
 # output of "embed"
 presentation:
 # Copy the html of File -> Publish to the Web -> Embed in Google
-dial_in_information:
-  - 87878787
-  - 81818789
-  - 98773890
 call_notes:
 ---
 - UK/Europe poorly attended (travel home for Holiday)
