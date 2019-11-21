@@ -2,10 +2,9 @@
 layout: event
 title:  "2019-11-19 Call"
 date:   2019-11-19 9:00
-time:
 file_list:
-summary: This is a summary of the call.
   # google drive links
+summary: This is a summary of the call.
 ---
 ### Agenda
   - DUO (Melanie Courtot, GA4GH)

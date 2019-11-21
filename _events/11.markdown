@@ -1,0 +1,10 @@
+---
+layout: event
+title:  "2020-02-25 Call"
+date:   2020-02-25 9:00
+file_list:
+  # google drive links
+summary: This is a summary of the call.
+---
+### Agenda
+- Katy Borner et al.: HuBMAP Tissue Registration User Interface (RUI)

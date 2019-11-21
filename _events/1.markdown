@@ -2,19 +2,11 @@
 layout: event
 title:  "2019-07-02 Call"
 date:   2019-07-02 9:00
-time:
 file_list:
   # google drive links
-
-recording:
-# double click video in Drive, and then click the three dots
-# to open in a new window.  Then click the three dots again and copy the
-# output of "embed"
-presentation:
-# Copy the html of File -> Publish to the Web -> Embed in Google
 summary: This is a summary of the call.
-call_notes:
 ---
+### Agenda
 - Metadata schema specifications
   - What does each project use?
   - What are the commonalities/differences?

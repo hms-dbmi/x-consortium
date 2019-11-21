@@ -27,6 +27,7 @@ twitter_username: x-consortium
 github_username:  x-consortium
 future: true
 baseurl: ""
+exclude: 2019-11-10.markdown
 # Build settings
 theme: minima
 plugins:

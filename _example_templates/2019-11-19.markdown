@@ -1,0 +1,18 @@
+---
+layout: event
+title:  "2019-11-25 Call"
+date:   2019-11-25 9:00
+file_list:
+  # google drive links
+  - example.com
+  - foo.com
+summary: Aenean accumsan consequat augue sit amet porttitor. Praesent sed mi at orci pretium hendrerit. Vestibulum pharetra laoreet mi id maximus.
+---
+### Agenda
+  - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pellentesque nec lorem consequat convallis. Ut ultrices felis enim, in feugiat libero vestibulum eu. Aliquam erat volutpat. Suspendisse justo mi, bibendum quis arcu ut, lobortis sagittis orci. Aliquam risus felis, suscipit vel lobortis a, molestie et arcu.
+  - Proin sed erat tempor, ornare sapien nec, gravida orci. Quisque viverra pretium tortor feugiat congue. Cras velit diam, scelerisque et augue in, commodo tincidunt nulla. Nullam quis egestas lorem.
+
+
+### Call Notes
+  - Aenean commodo consectetur augue, ut pellentesque erat. In tincidunt libero non sapien lacinia lobortis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In lobortis convallis tellus, vulputate ornare erat scelerisque id.
+  - Donec gravida dui nec tristique vulputate. Morbi imperdiet pellentesque leo vitae tempor. Fusce nulla felis, tempus a metus eget, aliquet tempus sapien. Fusce at justo nulla.

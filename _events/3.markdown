@@ -1,0 +1,11 @@
+---
+layout: event
+title:  "2019-09-10 Call"
+date:   2019-09-10 9:00
+file_list:
+  # google drive links
+summary: This is a summary of the call.
+---
+### Agenda
+- Patient/donor sample tracking (Bill Shirey - HuBMAP)
+  - Use of tracking software

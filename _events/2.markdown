@@ -4,16 +4,9 @@ title:  "2019-08-13 Call"
 date:   2019-08-13 9:00
 file_list:
   # google drive links
-
-recording:
-# double click video in Drive, and then click the three dots
-# to open in a new window.  Then click the three dots again and copy the
-# output of "embed"
-presentation:
-# Copy the html of File -> Publish to the Web -> Embed in Google
 summary: This is a summary of the call.
-call_notes:
 ---
+### Agenda
 - Curation of donor/patient data across the consortia
 
   - What donor/patient variables are recorded as metadata; is the set of recorded metadata variables guided by specific use-cases - e.g. facilitating data discovery for clinicians, bioinformaticians, or other user types; enabling specific analysis workflows; cohort building; etc.?

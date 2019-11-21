@@ -5,5 +5,4 @@
 layout: home
 ---
 
-This is the homepage for the x-consortium.  It's members include
-Nils Gehlenborg.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pellentesque nec lorem consequat convallis. Ut ultrices felis enim, in feugiat libero vestibulum eu. Aliquam erat volutpat. Suspendisse justo mi, bibendum quis arcu ut, lobortis sagittis orci. Aliquam risus felis, suscipit vel lobortis a, molestie et arcu.

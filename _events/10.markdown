@@ -1,0 +1,9 @@
+---
+layout: event
+title:  "2020-02-11 Call"
+date:   2020-02-11 9:00
+file_list:
+  # google drive links
+summary: This is a summary of the call.
+---
+### Agenda
