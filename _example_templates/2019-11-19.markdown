@@ -4,8 +4,8 @@ title:  "2019-11-25 Call"
 date:   2019-11-25 9:00
 file_list:
   # google drive links
-  - example.com
-  - foo.com
+  example.com: Praesent sed mi at orci pretium hendrerit. Vestibulum pharetra laoreet mi id maximus.
+  foo.com: Aenean accumsan consequat augue sit amet porttitor.
 summary: Aenean accumsan consequat augue sit amet porttitor. Praesent sed mi at orci pretium hendrerit. Vestibulum pharetra laoreet mi id maximus.
 ---
 ### Agenda

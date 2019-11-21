@@ -19,9 +19,11 @@ dial_in_link: https://zoom.us/j/797609437
   </div>
     {%- if page.file_list.size > 0 -%}
     <h2>Files</h2>
+    <ul>
       {%- for page_file in page.file_list -%}
-        •<a href="{{ page_file }}">{{ page_file }}</a> <br>
+        <li><a href="{{ page_file[0] }}">{{ page_file[0] }}</a>: {{page_file[1]}} </li>
       {%- endfor -%}
+    </ul>
     {%- endif -%}
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
 </article>
