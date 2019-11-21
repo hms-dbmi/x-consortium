@@ -1,7 +1,7 @@
 ---
 layout: event
 title:  "2020-02-25 Call"
-date:   2020-02-25 10:06:46 -0500
+date:   2020-02-25 9:00
 time:
 file_list:
   # google drive links
@@ -12,5 +12,6 @@ recording:
 presentation:
 # Copy the html of File -> Publish to the Web -> Embed in Google
 call_notes:
+summary: This is a summary of the call.
 ---
 - Katy Borner et al.: HuBMAP Tissue Registration User Interface (RUI)

@@ -1,7 +1,7 @@
 ---
 layout: event
 title:  "2020-01-14 Call"
-date:   2020-01-14 10:06:46 -0500
+date:   2020-01-14 9:00
 time:
 file_list:
   # google drive links
@@ -12,6 +12,7 @@ recording:
 presentation:
 # Copy the html of File -> Publish to the Web -> Embed in Google
 call_notes:
+summary: This is a summary of the call.
 ---
 - How to run the group
 - Web resource

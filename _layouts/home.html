@@ -12,20 +12,17 @@ layout: default
   {%- if site.events.size > 0 -%}
     <h2 class="post-list-heading">{{ page.list_title | default: "Next Event" }}</h2>
     <ul class="post-list">
-      {% assign sorted = (site.events | where_exp: "item", "item.date >= site.time" | sorted:"date") %}
-      {%- assign event = sorted.first -%}
-      <li>
-        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-        <span class="post-meta">{{ event.date | date: date_format }}</span>
-        <h3>
-          <a class="post-link" href="{{ event.url | relative_url }}">
-            {{ event.title | escape }}
-          </a>
-        </h3>
-        {%- if site.show_excerpts -%}
-          {{ event.excerpt }}
-        {%- endif -%}
-      </li>
+      <div id="upcoming-event">
+        {%- for event in site.events -%}
+          <div class="event-link" date="{{ event.date }}">
+              <a  href="{{ event.url | relative_url }}" >{{event.title}}</a>
+              <br/>
+              {{event.summary}}
+              <br/>
+              <br/>
+          </div>
+      {%- endfor -%}
+      </div>
     </ul>
   {%- endif -%}
 

@@ -28,6 +28,8 @@ dial_in_link: https://zoom.us/j/797609437
     {{ page.recording }}
     <h2>Presentation</h2>
     {{ page.presentation }}
+    <h2>Call Notes</h2>
+    {{ page.call_notes }}
     <h2>Files</h2>
     {%- for page_file in page.file_list -%}
       •<a href="{{ page_file }}">{{ page_file }}</a> <br>

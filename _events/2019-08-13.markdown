@@ -1,8 +1,7 @@
 ---
 layout: event
 title:  "2019-08-13 Call"
-date:   2019-08-13 10:06:46 -0500
-time:
+date:   2019-08-13 9:00
 file_list:
   # google drive links
 
@@ -12,7 +11,7 @@ recording:
 # output of "embed"
 presentation:
 # Copy the html of File -> Publish to the Web -> Embed in Google
-
+summary: This is a summary of the call.
 call_notes:
 ---
 - Curation of donor/patient data across the consortia

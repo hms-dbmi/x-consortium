@@ -1,11 +1,11 @@
 ---
 layout: event
 title:  "2019-09-10 Call"
-date:   2019-09-10 10:06:46 -0500
+date:   2019-09-10 9:00
 time:
 file_list:
   # google drive links
-
+summary: This is a summary of the call.
 recording:
 # double click video in Drive, and then click the three dots
 # to open in a new window.  Then click the three dots again and copy the

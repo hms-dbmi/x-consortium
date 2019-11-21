@@ -1,18 +1,19 @@
 ---
 layout: event
 title:  "2019-11-19 Call"
-date:   2019-11-19 10:06:46 -0500
+date:   2019-11-19 9:00
 time:
 file_list:
+summary: This is a summary of the call.
   # google drive links
-recording:
-# double click video in Drive, and then click the three dots
-# to open in a new window.  Then click the three dots again and copy the
-# output of "embed"
-presentation:
-# Copy the html of File -> Publish to the Web -> Embed in Google
-call_notes:
 ---
-- DUO (Melanie Courtot, GA4GH)
-- Data Use Ontology (access permissions, developed by groups within GA4GH to
+### Agenda
+  - DUO (Melanie Courtot, GA4GH)
+  - Data Use Ontology (access permissions, developed by groups within GA4GH to
   enable automatic access decisions)
+
+
+### Call Notes
+  - DUO (Melanie Courtot, GA4GH)
+  - Data Use Ontology (access permissions, developed by groups within GA4GH to
+    enable automatic access decisions)

@@ -1,7 +1,7 @@
 ---
 layout: event
 title:  "2019-07-02 Call"
-date:   2019-07-02 10:06:46 -0500
+date:   2019-07-02 9:00
 time:
 file_list:
   # google drive links
@@ -12,7 +12,7 @@ recording:
 # output of "embed"
 presentation:
 # Copy the html of File -> Publish to the Web -> Embed in Google
-
+summary: This is a summary of the call.
 call_notes:
 ---
 - Metadata schema specifications

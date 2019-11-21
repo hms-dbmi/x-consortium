@@ -1,7 +1,7 @@
 ---
 layout: event
 title:  "2019-12-17 Call"
-date:   2019-12-17 10:06:46 -0500
+date:   2019-12-17 9:00
 time:
 file_list:
   # google drive links
@@ -12,6 +12,7 @@ recording:
 presentation:
 # Copy the html of File -> Publish to the Web -> Embed in Google
 call_notes:
+summary: This is a summary of the call.
 ---
 - UK/Europe poorly attended (travel home for Holiday)
 - Provenance alignment discussion (confirm Milen availability)
