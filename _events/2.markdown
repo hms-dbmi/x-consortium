@@ -6,7 +6,7 @@ file_list:
   # google drive links
 summary: This is a summary of the call.
 ---
-### Agenda
+## Agenda
 - Curation of donor/patient data across the consortia
 
   - What donor/patient variables are recorded as metadata; is the set of recorded metadata variables guided by specific use-cases - e.g. facilitating data discovery for clinicians, bioinformaticians, or other user types; enabling specific analysis workflows; cohort building; etc.?

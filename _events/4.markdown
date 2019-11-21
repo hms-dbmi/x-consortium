@@ -6,7 +6,7 @@ file_list:
   # google drive links
 summary: This is a summary of the call.
 ---
-### Agenda
+## Agenda
 - Administrative:
   - Welcome to new members, brief update from HuBMAP Annual meeting, clarification of group privacy policy
 

@@ -6,5 +6,5 @@ file_list:
   # google drive links
 summary: This is a summary of the call.
 ---
-### Agenda
+## Agenda
 - Katy Borner et al.: HuBMAP Tissue Registration User Interface (RUI)

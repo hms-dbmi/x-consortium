@@ -16,7 +16,6 @@ dial_in_link: https://zoom.us/j/797609437
 
   <div class="post-content e-content" itemprop="articleBody">
     {{ content }}
-  </div>
     {%- if page.file_list.size > 0 -%}
     <h2>Files</h2>
     <ul>
@@ -25,5 +24,6 @@ dial_in_link: https://zoom.us/j/797609437
       {%- endfor -%}
     </ul>
     {%- endif -%}
+  </div>
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
 </article>
