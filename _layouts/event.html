@@ -24,7 +24,7 @@ dial_in_link: https://zoom.us/j/797609437
           <li><a href="{{ page_file[0] }}">{{ page_file[0] }}</a>: {{page_file[1]}} </li>
         {% else -%}
           {% assign file_store = "/file_store/" %}
-          <li><a href="{{  file_store | append:  page_file[0] | append: site.baseurl }}">{{ page_file[0] }}</a>: {{page_file[1]}} </li>
+          <li><a href="{{  site.baseurl }}{{  file_store }}{{ page_file[0] }}">{{ page_file[0] }}</a>: {{page_file[1]}} </li>
         {%- endif -%}
       {%- endfor -%}
     </ul>
