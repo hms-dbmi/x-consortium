@@ -1,12 +1,3 @@
-function makeUL(array) {
-    var list = document.createElement('ul');
-    array.forEach(function(elem) {
-      var item = document.createElement('li');
-      item.appendChild(elem);
-      list.appendChild(item);
-    })
-    return list;
-}
 var now = new Date();
 // Filter to get upcoming list.
 var eventLists = document.getElementById('event-lists');
