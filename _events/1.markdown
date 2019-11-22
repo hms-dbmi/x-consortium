@@ -4,6 +4,8 @@ title:  "2019-07-02 Call"
 date:   2019-07-02 9:00
 file_list:
   # google drive links
+  test.png: Praesent sed mi at orci pretium hendrerit. Vestibulum pharetra laoreet mi id maximus.
+  https://www.foo.com: Aenean accumsan consequat augue sit amet porttitor.
 summary: This is a summary of the call.
 ---
 ## Agenda
