@@ -2,21 +2,29 @@
 layout: page
 title: Events
 ---
-### Upcoming Events
+<div id="event-lists">
+<h3>Upcoming Events</h3>
+<ul id='upcoming'>
+{%- for event in site.events -%}
+<li class="event-link" data-date="{{ event.date }}">
+<a  href="{{ event.url | relative_url }}" >{{event.title}}</a>
 <br/>
-{%- assign sorted = (site.events | where_exp: "item", "item.date >= site.time" -%}
-{%- for event in sorted -%}
-   [**{{event.title}}**]({{ event.url | relative_url }})
-  {{event.content}}
+{{event.summary}}
+<br/>
+<br/>
+</li>                                   
 {%- endfor -%}
-
+</ul>
+<h3>Past Events</h3>
+<ul id='past'>
+{%- for event in site.events -%}
+<li class="event-link" data-date="{{ event.date }}">
+<a  href="{{ event.url | relative_url }}" >{{event.title}}</a>
 <br/>
-<hr/>
+{{event.summary}}
 <br/>
-### Past Events
 <br/>
-{%- assign sorted = (site.events | where_exp: "item", "item.date < site.time" -%}
-{%- for event in sorted -%}
-  [**{{event.title}}**]({{ event.url | relative_url }})
-  {{event.content}}
+</li>                                   
 {%- endfor -%}
+</ul>
+</div>

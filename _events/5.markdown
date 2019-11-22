@@ -1,0 +1,18 @@
+---
+layout: event
+title:  "2019-11-19 Call"
+date:   2019-11-19 9:00
+file_list:
+  # google drive links
+summary: This is a summary of the call.
+---
+## Agenda
+  - DUO (Melanie Courtot, GA4GH)
+  - Data Use Ontology (access permissions, developed by groups within GA4GH to
+  enable automatic access decisions)
+
+
+## Call Notes
+  - DUO (Melanie Courtot, GA4GH)
+  - Data Use Ontology (access permissions, developed by groups within GA4GH to
+    enable automatic access decisions)
