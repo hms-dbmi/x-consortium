@@ -1,6 +1,6 @@
 $( document ).ready(function() {
   function asDate(el) {
-    return new Date(el.split(' ')[0] +  ' ' + el.split(' ')[1])
+    return new Date(el.split(' ')[0] +  'T' + el.split(' ')[1])
   }
   var now = new Date();
   // This is the home page.
