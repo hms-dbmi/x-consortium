@@ -19,12 +19,12 @@
 # in the templates via {{ site.myvariable }}.
 
 title: x-consortium
-email: nils@x-consortium.com
+email: margaret_vella@hms.harvard.edu
 description: >- # this means to ignore newlines until "baseurl:"
   This is the website for x-consortium.
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: x-consortium
-github_username:  x-consortium
+twitter_username:
+github_username:
 future: true
 baseurl: "/x-consortium"
 # Build settings
