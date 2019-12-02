@@ -4,9 +4,15 @@ title:  "2019-12-03 Call"
 date:   2019-12-03 9:00
 file_list:
   # google drive links
-summary: This is a summary of the call.
+summary: Discussion of meta data use cases.
 ---
 ## Agenda
-- Milen Nikolov: metadata use cases
-  - Getting a presentation on the scRNA-seq metadata definition paper, and how this metadata definition (and also the associated model-definition process) can extend to defining metadata for a biosample core and other assay types that we can harmonize on would be a fantastic start!
+
+- Nils Gehlenborg: administrative issues (5 min)
+    - Naming of the group: https://forms.gle/7f4WCMfcdt7ZvYxd6
+    - Reminder to submit consortium descriptions and links: https://forms.gle/anmLtNoSM1BRcWcX9
+- Milen Nikolov: metadata use cases (30 min)
+  - Getting a presentation on the [scRNA-seq metadata definition paper](https://arxiv.org/abs/1910.14623), and how this metadata definition (and also the associated model-definition process) can extend to defining metadata for a biosample core and other assay types that we can harmonize on would be a fantastic start!
   - We are already using this preprint to guide our scRNA-seq metadata at HTAN and have developed simple tools to consume very similar metadata tables (to the ones outlined in the scRNA-seq pre-print) into Schema.org- and JSONSchemas-encoded data model; we generalized a bit their attributes table so that we can handle other types of metadata (and relationships between attributes).
+- All: other business
+
