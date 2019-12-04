@@ -19,3 +19,5 @@ summary: This is a summary of the call.
   - Other efforts?
 - Discussion
 - [Mailing list](https://lists.hubmapconsortium.org/g/xconsortiumdatacuration)
+
+## Call Notes
