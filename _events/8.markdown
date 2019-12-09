@@ -7,6 +7,6 @@ file_list:
 summary: This is a summary of the call.
 ---
 ## Agenda
-- Maggie Vella: Administrative Items (10 minutes)
-- Laura Clarke: Can we define a consistent list of top-level organ systems for use across our consortia? (30 minutes)
+- Maggie Vella: Administrative Items (5 min)
+- Laura Clarke: Can we define a consistent list of top-level organ systems for use across our consortia? (30 min)
 - All: Other business

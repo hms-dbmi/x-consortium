@@ -7,6 +7,6 @@ file_list:
 summary: This is a summary of the call.
 ---
 ## Agenda
-- Maggie Vella: Administrative Items (10 minutes)
-- Michael Baudis: SchemaBlocks Presentation (30 minutes)
+- Maggie Vella: Administrative Items (5 min)
+- Michael Baudis: SchemaBlocks Presentation (30 min)
 - All: Other business
