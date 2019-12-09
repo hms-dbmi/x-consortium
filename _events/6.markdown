@@ -16,3 +16,9 @@ summary: Discussion of meta data use cases.
   - We are already using this preprint to guide our scRNA-seq metadata at HTAN and have developed simple tools to consume very similar metadata tables (to the ones outlined in the scRNA-seq pre-print) into Schema.org- and JSONSchemas-encoded data model; we generalized a bit their attributes table so that we can handle other types of metadata (and relationships between attributes).
 - All: other business
 
+## Call Notes/Action Items
+- Use cases as metadata parameters - useful approach
+- Development of use cases was challenging
+- Could develop agreed required fields across consortia if high priority queries closely align
+- Maggie/Nils: Organize future portal call on CCF data specs (what to document and what data formats)
+- All: Continue to vote on name for site/submit consortium descriptions
