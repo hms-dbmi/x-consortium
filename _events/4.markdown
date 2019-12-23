@@ -13,16 +13,16 @@ summary: A discussion of HCA's ontologies to support cellular resolution data wi
 - Ontologies to support cellular resolution data
   - HCA approach - Zina Perova
 
-  
-## Call Notes & Action Items
-Ontology lookup service - single POA to latest ontology versions
-Ontology extract service - finds mappings between terms, tools to cross-reference other ontologies (understand even if not used, other groups able to map to ours)
-Monthly ontology release well coordinated with other consortia releases
 
-Not limited to a single ontology per domain
-Lots of support for mapping between different ontologies in same domain
-Large number of fields in Uberon, right now manual curation step after the fact, looking for solutions to make that easier
-Milen - CCF in HuBMAP, how could this be plugged into a more standardized ontology? Similar problem for HTAN
-Try and get CCF team on future call
-Right now, using organ parts, or if very detailed (e.g. brain, eye), can get much more information, but for less well-defined organs proximal-distal coordinates have been a challenge
-Tools or ontologies that qualify DUAs into a controlled vocabulary that you could use to annotate files so that permissions and sharing can be derived
+## Call Notes & Action Items
+- Try and get CCF team on future call
+- Ontology lookup service - single POA to latest ontology versions
+- Ontology extract service - finds mappings between terms, tools to cross-reference other ontologies (understand even if not used, other groups able to map to ours)
+- Monthly ontology release well coordinated with other consortia releases
+
+- Not limited to a single ontology per domain
+  - Lots of support for mapping between different ontologies in same domain
+- Large number of fields in Uberon, right now manual curation step after the fact, looking for solutions to make that easier
+- Milen - CCF in HuBMAP, how could this be plugged into a more standardized ontology? Similar problem for HTAN
+- Right now, using organ parts, or if very detailed (e.g. brain, eye), can get much more information, but for less well-defined organs proximal-distal coordinates have been a challenge
+- Tools or ontologies that qualify DUAs into a controlled vocabulary that you could use to annotate files so that permissions and sharing can be derived

@@ -17,7 +17,7 @@ summary: A discussion of meta data use cases with co-chair Milen Nikolov.
 - All: other business
 
 
-## Call Notes/Action Items
+## Call Notes & Action Items
 - Use cases as metadata parameters - useful approach
 - Development of use cases was challenging
 - Could develop agreed required fields across consortia if high priority queries closely align

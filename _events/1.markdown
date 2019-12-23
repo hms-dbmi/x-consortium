@@ -2,24 +2,17 @@
 layout: event
 title:  "2019-07-02 Call"
 date:   2019-07-02 10:00
-file_list:HCA metadata schema: https://github.com/HumanCellAtlas/metadata-schema
-HCA schema validator: https://github.com/HumanCellAtlas/ingest-validator-js
-Presentation of HCA metadata principles: https://docs.google.com/presentation/d/1fExLowEL5jHoWc1AloepP_7n6GWwg6TZ4bl1iKleI8I/edit#slide=id.g5c7728c05e_0_11
-4DN metadata schemas: https://data.4dnucleome.org/profiles/
-To view any particular schema expand with + and click on the ID link
-Add /?format=json to get the raw json view
-Structure and validation very similar to what was presented by Jason from ENCODE
-ENCODE metadata schemas (presented by Jason Hilton jahilton@stanford.edu):
-Raw - https://github.com/ENCODE-DCC/encoded/tree/dev/src/encoded/schemas
-More human-friendly - https://www.encodeproject.org/profiles/
-Post-indexing audits - https://github.com/ENCODE-DCC/encoded/tree/dev/src/encoded/audit
-2016 paper - https://academic.oup.com/database/article/doi/10.1093/database/baw001/2630135
-HTAN metadata presentation: https://docs.google.com/presentation/d/1HBvbw8aSZzozm_FoMtbVUVMK9SeTBGKhGbNZBWxvQ8U/edit?usp=sharing
-will provide links to repositories when we stabilize those a bit
-AE metadata presentation:
-https://drive.google.com/a/ebi.ac.uk/file/d/16bZFR1OGCufy2-eb4XkErONtpZK9MtGZ/view?usp=sharing
-
-
+file_list:
+https://github.com/HumanCellAtlas/metadata-schema: HCA metadata schema
+https://github.com/HumanCellAtlas/ingest-validator-js: HCA schema validator
+https://docs.google.com/presentation/d/1fExLowEL5jHoWc1AloepP_7n6GWwg6TZ4bl1iKleI8I/edit#slide=id.g5c7728c05e_0_11: Presentation of HCA metadata principles
+https://data.4dnucleome.org/profiles/: 4DN metadata schemas (To view any particular schema expand with + and click on the ID link.Add /?format=json to get the raw json view; Structure and validation very similar to what was presented by Jason from ENCODE; ENCODE metadata schemas (presented by Jason Hilton jahilton@stanford.edu)
+https://github.com/ENCODE-DCC/encoded/tree/dev/src/encoded/schemas: Raw
+https://www.encodeproject.org/profiles/: More human-friendly
+https://github.com/ENCODE-DCC/encoded/tree/dev/src/encoded/audit: Post-indexing audits
+https://academic.oup.com/database/article/doi/10.1093/database/baw001/2630135: 2016 paper
+https://docs.google.com/presentation/d/1HBvbw8aSZzozm_FoMtbVUVMK9SeTBGKhGbNZBWxvQ8U/edit?usp=sharing: HTAN metadata presentation
+https://drive.google.com/a/ebi.ac.uk/file/d/16bZFR1OGCufy2-eb4XkErONtpZK9MtGZ/view?usp=sharing: AE metadata presentation
 summary: A discussion of metadata schema specifications, metadata validation, and ontology validation.
 ---
 ## Agenda
@@ -36,41 +29,61 @@ summary: A discussion of metadata schema specifications, metadata validation, an
 
 
 ## Call Notes & Action Items
-- Represented on the call ENCODE, GDC, 4DN, HTAN, HuBMAP, HCA, Array Express
-HCA: metadata schema has been in active development for about 2 years, publically available in GH repo. Schema is written in JSON. HCA started with ideas what metadata needs to be represented - biomaterial, protocol, files, processes (execution of protocols), and projects as a whole. Everything is organised in the units of hierarchy. Entities can be assembled in a project. 3 levels of specificity - core (very stable), types (biomaterials, protocols etc; fairly stable), modules (domain specific - human-specific fields, mouse-specific fields). Validation of metadata - JSON comes with out-of-the-box validation tools, tried various validators in the early dates (these didn’t update with the JSON), settled on AJV. For ontologies - ontology annotation in our metadata, specific ontology modules, created submodules for restriction - graph restriction specifies which ontology this term can come from, it specifies the pair and class which are allowed. If the term doesn’t come from the specified class the ontology validation will fail.
+- Represented on the call: ENCODE, GDC, 4DN, HTAN, HuBMAP, HCA, Array Express
+- HCA: metadata schema has been in active development for about 2 years, publically available in GH repo. Schema is written in JSON. HCA started with ideas what metadata needs to be represented - biomaterial, protocol, files, processes (execution of protocols), and projects as a whole. Everything is organised in the units of hierarchy. Entities can be assembled in a project. 3 levels of specificity - core (very stable), types (biomaterials, protocols etc; fairly stable), modules (domain specific - human-specific fields, mouse-specific fields).
+- Validation of metadata - JSON comes with out-of-the-box validation tools, tried various validators in the early dates (these didn’t update with the JSON), settled on AJV.
+- For ontologies - ontology annotation in our metadata, specific ontology modules, created submodules for restriction - graph restriction specifies which ontology this term can come from, it specifies the pair and class which are allowed. If the term doesn’t come from the specified class the ontology validation will fail.
 
-ENCODE:  first developed 6-7 years ago. The Figure 4 in the paper shows the details.
-Schema is in JSON format. Dependencies section for the human donor. SOme required fields which are enums. There are a lot of built in dependencies that can check across properties within a single object. These are check upon submission, if this is not fulfilled the project can not be submitted. The labs have to send the error log to us so that we can see what has gone wrong and why it could not be submitted.
-Some are abstract classes. Some are broken down - human donor, mouse donor. Validation within a single object happens at the time of submission but across the objects validation can not happen at submission, so there are flags. There is a python script that can run through and mark what is missing/wrong. The python script runs every time the object is indexed. If something doesn’t match - throws an error.
-Also use these audits for data standards that are agreed upon by the labs. “This is a CHIP-seq experiment, I expect the read depth to be this.” If it is not it will through a flag. Typically metadata standards will block release, some data standards are warnings but do not block release.
+### ENCODE:  
+- First developed 6-7 years ago. The Figure 4 in the paper shows the details.
+- Schema is in JSON format. Dependencies section for the human donor. SOme required fields which are enums. There are a lot of built in dependencies that can check across properties within a single object.
+- These are check upon submission, if this is not fulfilled the project can not be submitted. The labs have to send the error log to us so that we can see what has gone wrong and why it could not be submitted.
+- Some are abstract classes. Some are broken down - human donor, mouse donor.
+- Validation within a single object happens at the time of submission but across the objects validation can not happen at submission, so there are flags. There is a python script that can run through and mark what is missing/wrong. The python script runs every time the object is indexed. If something doesn’t match - throws an error.
+- Also use these audits for data standards that are agreed upon by the labs.
+- “This is a CHIP-seq experiment, I expect the read depth to be this.” If it is not it will through a flag. Typically metadata standards will block release, some data standards are warnings but do not block release.
 
-HuBMAP: we don’t have any metadata standards. We want to learn.
+### HuBMAP
 
-HTAN: Each of the sites has a focus on specific disease and produces multiple formats of data. Some are done over multiple time points. We have to connect data from multiple assays, and for each of these assays we have to associated metadata so that later we can integrate all the data into analysis downstream. SO that we can query across all the metadata independent from the research sites where these data has been generated. 3 steps: data is put into storage, metadata gets collected in a metadata template acquired through our web interface, we associate their metadata with the data to initiate data integration and sharing. We want to use the same data structure to be able to generate these template and to generate the validation rules. Borrowed from HCA in terms of what kind of categories we want to use. We have 4-5 categories, Data, Biospecimen, Assay and Project, file. Assay can be scRNAseq for example [and various others]; assay data contain clinical data; assays attributes can be aligned with different consortia. The way we decided to organise our metadata is slightly different from HCA. We use Schema.org as a core entity organization structure and we use different extensions. BioThings provides additional biology/bioinformatics/clinical terms to Schema.org, bu these terms represent rather general categories. We extend BioThings to each particular core and, for instance, assay that we collect data for; we build the hierarchy of extensions as we build out data model across multiple assays. As we build out data models we also can automatically generate manifests (template spreadsheets) directly from the schema used for specific assay. Validation rules for different assays and data types - use JSON schema. Use Schema.org encoding of the schema, add dependencies to the Schema.org graph and then can automatically generate JSON schemas for specific data type. The type of JSON schemas we can generate - required properties, restrictions or constrained values, conditionals.
-Q: do you also incorporate ontologies in your required schemas?
-Yes. We are planning to include this in our data model. These allowable values that we are constraining certain attributes to take come from ontologies. We can associate ontologies to the particular values and we can coordinate with HCA ontologies, we started an inventory of different ontologies to create controlled vocabularies.
+- We don’t have any metadata standards. We want to learn.
 
-The Schema.org schema has a JSON representation but it is a little bit more [differently] structured [in a directed hypergraph where various attributes are stored as nodes; and edges represent the relationships between these nodes/attributes (e.g. validation requirements and dependencies; controlled vocabulary restrictions; allowed value types and ranges; subclass, synonymous, and other semantic relationships] and provides [“better”] semantic representation than JSON schema. For example you can see that this attribute requires dependencies. Schema.org allows support for multiple semantic relationships between terms, it comes with various [extensible] dictionaries and visualization tools, and it is supported by various search engines - if we have metadata organised in such a way we can take advantage of the downstream services. We also have the tools to translate Schema.org validation rules to JSON schema validation. The main reason we tried to stay away from JSON schemas [to directly store our data model(s)] is because we wanted to capture multiple [semantic] relationships.
+### HTAN
+- Each of the sites has a focus on specific disease and produces multiple formats of data.
+- Some are done over multiple time points. We have to connect data from multiple assays, and for each of these assays we have to associated metadata so that later we can integrate all the data into analysis downstream. SO that we can query across all the metadata independent from the research sites where these data has been generated.
+- 3 steps:
+  - data is put into storage, metadata gets collected in a metadata template acquired through our web interface, we associate their metadata with the data to initiate data integration and sharing.
+  - We want to use the same data structure to be able to generate these template and to generate the validation rules. Borrowed from HCA in terms of what kind of categories we want to use.
+  - We have 4-5 categories, Data, Biospecimen, Assay and Project, file. Assay can be scRNAseq for example [and various others]; assay data contain clinical data; assays attributes can be aligned with different consortia.
+  - The way we decided to organise our metadata is slightly different from HCA. We use Schema.org as a core entity organization structure and we use different extensions.
+  - BioThings provides additional biology/bioinformatics/clinical terms to Schema.org, but these terms represent rather general categories. We extend BioThings to each particular core and, for instance, assay that we collect data for; we build the hierarchy of extensions as we build out data model across multiple assays. As we build out data models we also can automatically generate manifests (template spreadsheets) directly from the schema used for specific assay. Validation rules for different assays and data types - use JSON schema. Use Schema.org encoding of the schema, add dependencies to the Schema.org graph and then can automatically generate JSON schemas for specific data type. The type of JSON schemas we can generate - required properties, restrictions or constrained values, conditionals.
+- Q: do you also incorporate ontologies in your required schemas?
+  - Yes. We are planning to include this in our data model. These allowable values that we are constraining certain attributes to take come from ontologies. We can associate ontologies to the particular values and we can coordinate with HCA ontologies, we started an inventory of different ontologies to create controlled vocabularies.
 
-If we are starting from scratch with a new assay we can still use already defined ontologies as applicable and incorporate them as controlled vocabularies for various assay descriptions. Ultimately we can produce a template annotation spreadsheet generated based on the model for a specific assay where contributors can annotate their data. The spreadsheet supports  conditional dependencies [however we are also developing a more user-friendly UI to do that].
+- The Schema.org schema has a JSON representation but it is a little bit more [differently] structured [in a directed hypergraph where various attributes are stored as nodes; and edges represent the relationships between these nodes/attributes (e.g. validation requirements and dependencies; controlled vocabulary restrictions; allowed value types and ranges; subclass, synonymous, and other semantic relationships] and provides [“better”] semantic representation than JSON schema.
+- For example you can see that this attribute requires dependencies. Schema.org allows support for multiple semantic relationships between terms, it comes with various [extensible] dictionaries and visualization tools, and it is supported by various search engines - if we have metadata organised in such a way we can take advantage of the downstream services. We also have the tools to translate Schema.org validation rules to JSON schema validation. The main reason we tried to stay away from JSON schemas [to directly store our data model(s)] is because we wanted to capture multiple [semantic] relationships.
 
-[For assays characterized by already existing data models/metadata standards - e.g. RNASeq, WES/WGS, etc. - we align the HTAN data model and required attributes correspondingly; ditto for various clinical data and diseases data models/standards and attributes. For certain HTAN dataset types, we extend these pre-existing data models with various attributes related to novel data modalities that HTAN collects - temporal-spatial relationships (for instance, sample spatial adjacency information; sample timeseries information)]
+- If we are starting from scratch with a new assay we can still use already defined ontologies as applicable and incorporate them as controlled vocabularies for various assay descriptions. Ultimately we can produce a template annotation spreadsheet generated based on the model for a specific assay where contributors can annotate their data. The spreadsheet supports  conditional dependencies [however we are also developing a more user-friendly UI to do that].
 
-GDC: We have yamls they are run through python script to become JSON. 4 different entities, Biospecimen, Case,
-For data workflows we don’t use much ontologies. We have other ontologi applications in clinical biospecimen.
-Some validation is already embedded in the yaml field already, for example required fields. There is some conditional validation.
-QC check - QC report, first step is embedded in the yaml file, before the pipelines start running we run the python script that validated metadata properties across the graph based on the predefined rules. And this is much easier to describe in a stand-alone script. Currently we have an implementation during submission to do QC check. When users submit data in addition to file check and md5 checks, the schema check is happening. Ontologies we use for the clinical metadata - information we use for the diagnosis. We have been doing the best to harmonize with the external databases. One of the major challenges was converting these stages to something that can be completely controlled in terms of different form - stage 3 can be used for some types of cancers but not for others. We have tired to enumerate as many things as we can. We have something called Data Dictionary Viewer - which describes the properties.
+- [For assays characterized by already existing data models/metadata standards - e.g. RNASeq, WES/WGS, etc. - we align the HTAN data model and required attributes correspondingly; ditto for various clinical data and diseases data models/standards and attributes. For certain HTAN dataset types, we extend these pre-existing data models with various attributes related to novel data modalities that HTAN collects - temporal-spatial relationships (for instance, sample spatial adjacency information; sample timeseries information)]
 
-Other efforts that should be contacted:
-Rebuilding a Kidney (RBK) and GenitoUrinary Development Molecular Anatomy Project (GUDMAP): About 9 years into developing data and portal. NIH funded. Extensive meta-data and data specifications including scRNAseq, imaging etc. Data ingestion pipeline. Focused on the Genitourinary tract, including the kidney. https://www.gudmap.org/about/
+### GDC:
+- We have yamls they are run through python script to become JSON. 4 different entities, Biospecimen, Case,
+- For data workflows we don’t use much ontologies. We have other ontologi applications in clinical biospecimen.
+- Some validation is already embedded in the yaml field already, for example required fields. There is some conditional validation.
+- QC check - QC report, first step is embedded in the yaml file, before the pipelines start running we run the python script that validated metadata properties across the graph based on the predefined rules. And this is much easier to describe in a stand-alone script. Currently we have an implementation during submission to do QC check.
+- When users submit data in addition to file check and md5 checks, the schema check is happening. Ontologies we use for the clinical metadata - information we use for the diagnosis. We have been doing the best to harmonize with the external databases.
+- One of the major challenges was converting these stages to something that can be completely controlled in terms of different form - stage 3 can be used for some types of cancers but not for others. We have tired to enumerate as many things as we can. We have something called Data Dictionary Viewer - which describes the properties.
 
-Kidney Precision Medicine Project (KPMP). NIH funded.Several years into project. Focused on the kidney. https://kpmp.org
+### Other efforts that should be contacted:
+- Rebuilding a Kidney (RBK) and GenitoUrinary Development Molecular Anatomy Project (GUDMAP): About 9 years into developing data and portal. NIH funded. Extensive meta-data and data specifications including scRNAseq, imaging etc. Data ingestion pipeline. Focused on the Genitourinary tract, including the kidney. https://www.gudmap.org/about/
 
-ApiNATOMY (https://bivi.co/visualisation/apinatomy). Contact: Dr. Bernard de Bono. Data and meta-data specifications, data pipeline.
+- Kidney Precision Medicine Project (KPMP). NIH funded.Several years into project. Focused on the kidney. https://kpmp.org
+
+- ApiNATOMY (https://bivi.co/visualisation/apinatomy). Contact is Dr. Bernard de Bono. Data and meta-data specifications, data pipeline.
 
 9/7/2019 follow-up call:
 
-ArrayExpress/scExpression Atlas
+# ArrayExpress/scExpression Atlas
 - Use MAGE-TAB (idf, sdrf)
   - Originally for microarray; adapted for RNAseq, scRNAseq
   - idf: experiment, authors, protocols, link to sdrf, re-analysis requirements
@@ -94,7 +107,7 @@ ArrayExpress/scExpression Atlas
     - MAGE-TAB spec: http://fged.org/projects/mage-tab/
 
 
-4DN (4D Nucleome) Metadata Tools
+### 4DN (4D Nucleome) Metadata Tools
 - Based on ENCODES’ infrastructure
 - Metadata database (SnoVault) + suite of tools (including schema validation)
 - New experiment type, find who is doing it, ask them to collect what metadata is necessary, capture fields+protocol PDFs,
