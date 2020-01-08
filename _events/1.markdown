@@ -3,16 +3,16 @@ layout: event
 title:  "2019-07-02 Call"
 date:   2019-07-02 10:00
 file_list:
-https://github.com/HumanCellAtlas/metadata-schema: HCA metadata schema
-https://github.com/HumanCellAtlas/ingest-validator-js: HCA schema validator
-https://docs.google.com/presentation/d/1fExLowEL5jHoWc1AloepP_7n6GWwg6TZ4bl1iKleI8I/edit#slide=id.g5c7728c05e_0_11: Presentation of HCA metadata principles
-https://data.4dnucleome.org/profiles/: 4DN metadata schemas (To view any particular schema expand with + and click on the ID link.Add /?format=json to get the raw json view; Structure and validation very similar to what was presented by Jason from ENCODE; ENCODE metadata schemas (presented by Jason Hilton jahilton@stanford.edu)
-https://github.com/ENCODE-DCC/encoded/tree/dev/src/encoded/schemas: Raw
-https://www.encodeproject.org/profiles/: More human-friendly
-https://github.com/ENCODE-DCC/encoded/tree/dev/src/encoded/audit: Post-indexing audits
-https://academic.oup.com/database/article/doi/10.1093/database/baw001/2630135: 2016 paper
-https://docs.google.com/presentation/d/1HBvbw8aSZzozm_FoMtbVUVMK9SeTBGKhGbNZBWxvQ8U/edit?usp=sharing: HTAN metadata presentation
-https://drive.google.com/a/ebi.ac.uk/file/d/16bZFR1OGCufy2-eb4XkErONtpZK9MtGZ/view?usp=sharing: AE metadata presentation
+  https://github.com/HumanCellAtlas/metadata-schema: HCA metadata schema
+  https://github.com/HumanCellAtlas/ingest-validator-js: HCA schema validator
+  https://docs.google.com/presentation/d/1fExLowEL5jHoWc1AloepP_7n6GWwg6TZ4bl1iKleI8I/edit#slide=id.g5c7728c05e_0_11: Presentation of HCA metadata principles
+  https://data.4dnucleome.org/profiles/: 4DN metadata schemas (To view any particular schema expand with + and click on the ID link.Add /?format=json to get the raw json view; Structure and validation very similar to what was presented by Jason from ENCODE; ENCODE metadata schemas (presented by Jason Hilton jahilton@stanford.edu)
+  https://github.com/ENCODE-DCC/encoded/tree/dev/src/encoded/schemas: Raw
+  https://www.encodeproject.org/profiles/: More human-friendly
+  https://github.com/ENCODE-DCC/encoded/tree/dev/src/encoded/audit: Post-indexing audits
+  https://academic.oup.com/database/article/doi/10.1093/database/baw001/2630135: 2016 paper
+  https://docs.google.com/presentation/d/1HBvbw8aSZzozm_FoMtbVUVMK9SeTBGKhGbNZBWxvQ8U/edit?usp=sharing: HTAN metadata presentation
+  https://drive.google.com/a/ebi.ac.uk/file/d/16bZFR1OGCufy2-eb4XkErONtpZK9MtGZ/view?usp=sharing: AE metadata presentation
 summary: A discussion of metadata schema specifications, metadata validation, and ontology validation.
 ---
 ## Agenda
