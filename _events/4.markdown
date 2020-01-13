@@ -3,7 +3,7 @@ layout: event
 title:  "2019-10-08 Call"
 date:   2019-10-08 10:00
 file_list:
-- (https://docs.google.com/presentation/d/1toZITnCCHTS7yoqODjop6qtI17CHCiyEJLInREQJSsc/edit#slide=id.g62e11bdf07_0_0)
+https://docs.google.com/presentation/d/1toZITnCCHTS7yoqODjop6qtI17CHCiyEJLInREQJSsc/edit#slide=id.g62e11bdf07_0_0: presentation slides
 summary: A discussion of HCA's ontologies to support cellular resolution data with guest speaker Zina Perova.
 ---
 ## Agenda
