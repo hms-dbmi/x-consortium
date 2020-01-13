@@ -3,7 +3,7 @@ layout: event
 title:  "2019-11-19 Call"
 date:   2019-11-19 10:00
 file_list:
-  https://docs.google.com/presentation/d/18bT4-wVe3PheeiMLKRvQxpXoCeSjzH3Hj-Axn6V2VFE/edit#slide=id.g78fcc90ba3_2_110
+  https://docs.google.com/presentation/d/18bT4-wVe3PheeiMLKRvQxpXoCeSjzH3Hj-Axn6V2VFE/edit#slide=id.g78fcc90ba3_2_110: presentation slides
 summary: A discussion of DUO (Data Use Ontology) with guest speaker Melanie Courtot from GA4GH. Also some discussion on administrative topics surrounding our group name and web presence.
 ---
 ## Agenda
