@@ -1,11 +1,12 @@
 ---
 layout: event
 title:  "2019-12-17 Call"
-date:   2019-12-17 9:00
+date:   2019-12-17 10:00
 file_list:
   # google drive links
-summary: This is a summary of the call.
+summary: This call has been cancelled
 ---
 ## Agenda
-- UK/Europe poorly attended (travel home for Holiday)
-- Provenance alignment discussion (confirm Milen availability)
+- Due to travel for the upcoming holidays, this call has been cancelled.
+- We will reconvene on January 14th.
+- Happy holidays, everyone!!

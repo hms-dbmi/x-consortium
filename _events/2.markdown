@@ -1,14 +1,16 @@
 ---
 layout: event
 title:  "2019-08-13 Call"
-date:   2019-08-13 9:00
+date:   2019-08-13 10:00
 file_list:
   # google drive links
-summary: This is a summary of the call.
+summary: A cross-consortium open discussion on patient/donor data.
 ---
 ## Agenda
 - Curation of donor/patient data across the consortia
 
+
+## Call Notes & Action Items
   - What donor/patient variables are recorded as metadata; is the set of recorded metadata variables guided by specific use-cases - e.g. facilitating data discovery for clinicians, bioinformaticians, or other user types; enabling specific analysis workflows; cohort building; etc.?
   - What ontologies/controlled vocabularies are used for recording patient/donor information (e.g. disease, organ/tissue/site related to biosamples)? Motivations behind choices?
   - How is patient/donor biosample tracking handled; are any relationships between biosamples from the same patient/donor stored as metadata - e.g. are temporal-spatial relationships between biosamples derived from the same tissue/site tracked? For example, spatio-temporal relationships may include information about biosamples spatial adjacency in a given tissue/site; time-series metadata in cases of multiple biosamples from the same tissue/site over time. What kind of information/metadata, if any is encoded in a biosample ID?
