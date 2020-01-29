@@ -1,7 +1,7 @@
 ---
 layout: event
 title:  "2020-02-25 Call"
-date:   2020-02-25 10:00
+date:   2020-02-25 17:00
 file_list:
   # google drive links
 summary: A discussion of the HuBMAP Tissue Registration Interface (RUI) with guest speaker Katy Borner and team.
