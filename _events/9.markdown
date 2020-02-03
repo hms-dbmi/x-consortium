@@ -10,3 +10,9 @@ summary: A discussion on SchemaBlocks with guest speaker Michael Baudis.
 - Maggie Vella: Administrative Items (5 min)
 - Michael Baudis: SchemaBlocks Presentation (30 min)
 - All: Other business
+
+##Call Notes & Action Items
+- Group name decided as Cell Atlas Curation Working Group. Nils' team to establish website domain
+- Everybody is interested in creating atlases, if we can use the same interoperable standard that’s the ideal vision, if we can do that lined up with GA4GH it will be easier
+- How best to interact, work together: Schemablocks will transcribe phenopackets completely but emphasis is more on blocks, e.g how to represent geographic or population data
+- Visit https://Schemablocks.org for more information

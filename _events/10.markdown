@@ -4,9 +4,9 @@ title:  "2020-02-11 Call"
 date:   2020-02-11 17:00
 file_list:
   # google drive links
-summary: A discussion to define a consistent list of top-level organ systems for use across our consortia with co-chair Laura Clarke.
+summary: A discussion of provenance alignment efforts with co-chair Milen Nikolov.
 ---
 ## Agenda
 - Maggie Vella: Administrative Items (5 min)
-- Laura Clarke: Can we define a consistent list of top-level organ systems for use across our consortia? (30 min)
+- Milen Nikolov: Provenance Alignment Discussion (30 min)
 - All: Other business
